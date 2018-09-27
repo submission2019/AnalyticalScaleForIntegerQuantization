@@ -2,7 +2,7 @@
 This is complete example for applying Laplace and Gaussian clipping on activations of CNN.
 
 ## Dependencies
-
+- python3.x
 - [pytorch](<http://www.pytorch.org>)
 - [torchvision](<https://github.com/pytorch/vision>) to load the datasets, perform image transforms
 - [pandas](<http://pandas.pydata.org/>) for logging to csv
@@ -15,3 +15,8 @@ This is complete example for applying Laplace and Gaussian clipping on activatio
 
 ## Building cuda kernels for GEMMLOWP
 To improve performance GEMMLOWP quantization was implemented in cuda and requires to compile kernels.
+
+- Create virtual environment for python3 "virtualenv --system-site-packages -p python3 venv3"
+- . ./venv3/bin/activate
+- cd kernels
+- ./build_all.sh
