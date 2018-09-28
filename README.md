@@ -39,8 +39,12 @@ Following command line will evaluate resnet18 with 4bit activations and Laplace 
 ```
 python inference-sim -a resnet18 -b 512 --qtype int4 -sm use -th laplace
 ```
+`* Prec@1 65.728 Prec@5 86.706`
 
-For not clipped version just omit -th or set "-th no"
+To evaluate non clipped version just omit -th or set "-th no"
 ```
-python inference-sim -a resnet18 -b 512 --qtype int4 -sm use
+python inference-sim -a resnet18 -b 512 --qtype int4 -sm use th no
 ```
+`* Prec@1 53.206 Prec@5 76.860`
+
+Laplace clipping improves top1 accuracy by 12.5% w/o retraining.
