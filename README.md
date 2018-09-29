@@ -48,3 +48,10 @@ python inference-sim -a resnet18 -b 512 --qtype int4 -sm use th no
 `* Prec@1 53.206 Prec@5 76.860`
 
 Laplace clipping improves top1 accuracy by 12.5% w/o retraining.
+
+## Solution for optimal clipping
+
+The best of our knowladge, differentiable equations presented in the paper doesn't have analytical solution. We solve those empirically using scipy library and find optimal alpha value for Gaussian and Laplace cases. 
+We show linear dependency between optimal alpha and sigma for Gaussian case and optimal alpha and b for Laplace case.
+
+[optimal_alpha.ipynb](optimal_alpha.ipynb)
