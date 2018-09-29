@@ -55,3 +55,6 @@ The best of our knowladge, differentiable equations presented in the paper doesn
 We show linear dependency between optimal alpha and sigma for Gaussian case and optimal alpha and b for Laplace case.
 
 [optimal_alpha.ipynb](optimal_alpha.ipynb)
+
+Gaussian case, linear dependency
+![Gaussian case](figures/opt_alpha_gaussian.png)
