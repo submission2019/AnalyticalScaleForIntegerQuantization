@@ -1,6 +1,6 @@
 # ACIQ: ANALYTICAL CLIPPING FOR INTEGER QUANTIZATION OF NEURAL NETWORKS
 This is complete example for applying Laplace and Gaussian clipping on activations of CNN.
-[ASIQ](https://openreview.net/pdf?id=B1x33sC9KQ)
+[ACIQ](https://openreview.net/pdf?id=B1x33sC9KQ)
 
 ## Dependencies
 - python3.x
